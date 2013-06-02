@@ -197,15 +197,21 @@ var submit = function(){
 											"CM_Learning":cm_learning
 										  } );
 
+
 	$.ajax( {
 			type:"POST",
 			url:"http://r444b.ee.ntu.edu.tw/course_rater/postComment.php",
 			data: {"comments": json_course_cm }
 		}).done(function(data){
-			console.log(data);
-	});
+			//console.log("from r444b:"+data);
+			$("input[name=send]").click();
+	}).fail( function(xhr, textStatus, errorThrown) {
+				console.log(xhr.responseText);
+			alert("Error, Please click the bottom below this page");
+       // alert(xhr.responseText);
+    });
+	
 
-	$("input[name=send]").click();
 	return true;
 }
 
