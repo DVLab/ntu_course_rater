@@ -9,7 +9,7 @@ var self=require("self"); 
 pageMod.PageMod({
 	include: [				
 				"https://investea.aca.ntu.edu.tw/opinion/giveform3.asp", 
-				"https://investea.aca.ntu.edu.tw/opinion/mchooes.asp",
+				"https://investea.aca.ntu.edu.tw/aca_doc/opinion/giveform3.asp",
 				],
     contentScriptFile: [self.data.url("jquery-1.8.3.min.js"),
 						self.data.url("jquery-ui.js"),
