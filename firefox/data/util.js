@@ -251,11 +251,12 @@ var submit = function(){
 										  } );
 
 	$.ajax( {
+			timeout:8000,
 			type:"POST",
 			url:"http://r444b.ee.ntu.edu.tw/course_rater/postComment.php",
 			data: {"comments": json_course_cm }
 		}).done(function(data){
-			//console.log("from r444b:"+data);
+				console.log("from r444b:"+data);
 			$("input[name=send]").click();
 	}).fail( function(xhr, textStatus, errorThrown) {
 				console.log(xhr.responseText);
