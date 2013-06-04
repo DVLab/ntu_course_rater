@@ -251,7 +251,7 @@ var submit = function(){
 										  } );
 
 	$.ajax( {
-			timeout:8000,
+			timeout:38000,
 			type:"POST",
 			url:"http://r444b.ee.ntu.edu.tw/course_rater/postComment.php",
 			data: {"comments": json_course_cm }
