@@ -1,7 +1,7 @@
 {
   "name": "NTU Course Rater",
-  "version": "1.0.2",
-  "manifest_version": 2,
+  "version": "1.0.4",
+  "manifest_version": 4,
   "description": "Rate More, Get More!!!",
   "content_scripts": [
   	{

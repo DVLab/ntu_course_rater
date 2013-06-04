@@ -13,6 +13,9 @@ $.ajax({
 
 			$("#submitButton").bind('click',function(){submit();});
 			$("#privacy").bind('click',function(){ showMessageDialog();});
+
+			$("#comment").change(function(){ changeCommentText();});
+
 			$("input[name=ans1]")[0].click();
 			$("input[name=ans2]")[0].click();
 			$("input[name=ans3]")[0].click();

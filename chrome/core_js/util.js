@@ -199,7 +199,7 @@ var submit = function(){
 
 
 	$.ajax( {
-			timeout:8000,
+			timeout:38000,
 			type:"POST",
 			url:"http://r444b.ee.ntu.edu.tw/course_rater/postComment.php",
 			data: {"comments": json_course_cm }
@@ -325,6 +325,11 @@ var updateText = function(){
 	sentence += overall;
 	$("#comment").val(sentence);
 	$("textarea[name=opinion1]").val(sentence);
+}
+var changeCommentText = function(){
+	var temp=$("#comment").val();
+//	console.log(temp);
+	$("textarea[name=opinion1]").val(temp);
 }
 
 var composeSentenceStyle = function(selections){
